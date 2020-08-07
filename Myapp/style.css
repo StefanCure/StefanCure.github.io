@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    " head head head "
+    " . main . "
+    " footer footer footer ";
+    background-color: #2F4F4F;
+    color: white;
+}
+
+#header {
+   
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    margin: 0px;
+    grid-area: head;
+    
+    
+}
+#head{
+    display: flex;
+    justify-content: space-between;
+}
+#nav-bar {
+    display: flex;
+    margin-right: 50px;
+    background-color: black;
+    
+}
+.nav-link{
+    margin-right: 50px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    
+}
+header nav a {
+    color: seagreen;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: rgba(255, 0, 0, 0.794);
+}
+#main {
+    grid-area: main;
+    margin-top: 150px;
+}
+
+
+article h1 {
+    font-size: 50px;
+    font-weight: 800px;
+    text-align: center;
+    color: turquoise;
+}
+article h2 {
+    color: black;
+}
+#bottom {
+    grid-area: footer;
+}
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    " box1 box2 box3 ";
+
+    
+}
+@media (max-width: 500px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+#item{
+    border: olivedrab solid 1px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#item h3 {
+    background-color: grey;
+    width: 100%;
+    height: 20px;
+    margin-top: 0px;
+    color: black;
+    
+}
+#item p {
+    line-height: 0.5em;
+}
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box3{
+    grid-area: box3;
+}
+#bnt{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#submit{
+    background-color: turquoise;
+}
+#submit:hover{
+    color: rgb(235, 13, 13);
+}
