@@ -18,6 +18,7 @@ body {
     position: fixed;
     margin: 0px;
     grid-area: head;
+    z-index: 2;
     
     
 }
@@ -40,6 +41,7 @@ body {
 header nav a {
     color: seagreen;
     text-decoration: none;
+    transition: all 0.99s linear;
 }
 header nav a:hover {
     color: rgba(255, 0, 0, 0.794);
@@ -64,26 +66,20 @@ article h2 {
 }
 #container{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    " box1 box2 box3 ";
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 10px;
 
     
 }
-@media (max-width: 500px) {
-    #container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+
 #item{
     border: olivedrab solid 1px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 #item h3 {
     background-color: grey;
@@ -91,20 +87,16 @@ article h2 {
     height: 20px;
     margin-top: 0px;
     color: black;
+    font-weight: 0.5em;
+    font-size: 0.9em;
+    align-self: center;
+    justify-self: center;
     
 }
 #item p {
     line-height: 0.5em;
 }
-.box1{
-    grid-area: box1;
-}
-.box2{
-    grid-area: box2;
-}
-.box3{
-    grid-area: box3;
-}
+
 #bnt{
     margin-bottom: 30px;
     margin-top: 10px;
