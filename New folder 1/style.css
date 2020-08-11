@@ -21,6 +21,20 @@ body {
     background-color: #2F4F4F;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 20px 2fr 50px;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+        " head head head "
+        " . main . "
+        " footer footer footer "; 
+        
+    }
+}
+
 img {
     display:block;
     max-width: 100%;
