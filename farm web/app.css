@@ -609,8 +609,8 @@ footer {
     height: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: left;
-    margin: 0 6em;
+    align-items: center;
+    margin: 0;
     padding: 0;
   }
 
@@ -632,7 +632,7 @@ footer {
  }
 
  .nav-open .main-nav {
-  transform: translateX(50%);
+  transform: translateX(0);
 }
 
 .hamburger {
