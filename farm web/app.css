@@ -381,9 +381,9 @@ header {
 }
 
 .testimonial {
-  width: 85%;
+  max-width: 85%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   margin: 0 auto;
   color: var(--clr-lit);
   grid-row-gap: 5rem;
@@ -735,4 +735,14 @@ footer {
     margin-left: 1em;
 }
 
+}
+
+
+@media screen and (max-width: 500px) {
+  .portfolio {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    padding-top: 2em;
+  }
 }
