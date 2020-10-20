@@ -1,5 +1,7 @@
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home-intro");
+const sectionTwo = document.querySelector(".home-farm");
+const header1 = document.querySelector(".header");
 
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
@@ -38,6 +40,26 @@ const sectionOneObserver = new IntersectionObserver(function(
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+
+const sectionTwoOptions = {
+  rootMargin: "-200px 0px 0px 0px"
+};
+
+const sectionTwoObserver = new IntersectionObserver(function(
+  entries,
+  sectionTwoObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header1.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionTwoOptions);
+sectionTwoObserver.observe(sectionTwo);
 
 const appearOptions = {
   threshold: 0,
