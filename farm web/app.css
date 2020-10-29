@@ -1082,14 +1082,26 @@ footer {
 
 .section-pdt {
   margin-top: 6em;
-  padding: 3em 3em 4em 3em;
+  padding: 6em 3em 4em 3em;
   background-color: var(--clr-bk);
   text-align: center;
 }
 
 .section-pdt h1 {
-  font-size: 2em;
+  font-size: 4em;
   color: green;
+}
+
+@media screen and (max-width:1200px) {
+  .section-pdt h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .section-pdt h1 {
+    font-size: 3em;
+  }
 }
 
 .section-pdt p {
