@@ -700,7 +700,7 @@ header {
 
 .sec-gallery {
     padding: 5em 6em;
-    background-color: var(--clr-lit1);
+    background-color: var(--clr-lit2);
     text-align: center;
 }
 
@@ -724,8 +724,8 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding-top: 3em;
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
     margin: 0 auto;
 }
   
